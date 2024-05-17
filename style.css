@@ -1,0 +1,200 @@
+*{
+margin: 0;
+padding: 0;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circle{
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+  
+}
+
+.zero{
+    position:absolute;
+    width: 10px;
+    height: 50px;
+    background-color:rgb(144, 248, 9);
+    left:50%;
+    top: 12%;
+    box-shadow: 2px 4px 6px;
+
+}
+.one{
+    position:absolute;
+    width: 10px;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    left:59%;
+    top: 19%;
+    transform: rotateZ( 30deg);
+    
+}
+.two{
+    position:absolute;
+    width: 10px;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    left:64%;
+    top: 30%;
+    transform: rotateZ(60deg);
+    
+
+}
+.three{
+    position:absolute;
+    width: 10px;
+    height: 50px;
+    background-color:rgb(144, 248, 9);
+    left:67%;
+    top: 45%;
+    transform: rotateZ(90deg);
+    box-shadow: 2px 4px 6px;
+
+}
+.four{
+    position:absolute;
+    width: 10px;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    left:64%;
+    top: 65%;
+    transform: rotateZ(120deg);
+
+}
+.five{
+    position:absolute;
+    width: 10px;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    left:59%;
+    top: 75%;
+    transform: rotateZ(150deg);
+
+}
+.six{
+    position:absolute;
+    width: 10px;
+    height: 50px;
+    background-color:rgb(144, 248, 9);
+    left:50%;
+    top: 80%;
+    transform: rotateZ(180deg);
+    box-shadow: 2px 4px 6px;
+
+}
+.seven{
+    position:absolute;
+    width: 10px;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    left:40%;
+    top: 75%;
+    transform: rotateZ(210deg);
+
+}
+.eight{
+    position:absolute;
+    width: 10px;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    left:35%;
+    top: 63%;
+    transform: rotateZ(240deg);
+
+}
+.nine{
+    position:absolute;
+    width: 10px;
+    height: 50px;
+    background-color:rgb(144, 248, 9);
+    left:32.5%;
+    top: 45%;
+    transform: rotateZ(270deg);
+    box-shadow: 2px 4px 6px;
+
+}
+.ten{
+    position:absolute;
+    width: 10px;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    left:35%;
+    top: 30%;
+    transform: rotateZ(300deg);
+
+}
+.elleven{
+    position:absolute;
+    width: 10px;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    left:42%;
+    top: 18%;
+    transform: rotateZ(330deg);
+
+}
+
+.secondhand{
+    position: absolute;
+    top: 12%;
+    bottom: 50%;
+    width: 2px;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    animation: seconds;
+    animation-duration: 60s;
+    animation-delay: none;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+@keyframes seconds{
+    0%{ transform: rotateZ(0deg);
+        transform-origin: bottom left;
+    }
+    100%{
+        transform: rotateZ(360deg);
+        transform-origin: bottom left;
+        
+    }
+}
+.minutes{
+    position: absolute;
+    top: 12%;
+    bottom: 50%;
+    width: 8px;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    border-radius:50px;
+    animation: minutes;
+    animation-iteration-count: infinite;
+    animation-duration: 3600s;
+}
+.hours{
+    position: absolute;
+    bottom: 52%;
+    width: 15px;
+    height: 150px;
+    background-color: rgb(255, 255, 255);
+    border-radius:50px;
+    
+}
+@keyframes minutes {
+    0%{ transform: rotateZ(0deg);
+        transform-origin: bottom left;
+    }
+    100%{
+        transform: rotateZ(360deg);
+        transform-origin: bottom left;
+        
+    }
+
+    
+}
